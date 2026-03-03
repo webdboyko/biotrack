@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БиоТрек — варианты виджета</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="page-header">
+        <h1>Варианты виджета «Сводка здоровья»</h1>
+        <p>Три визуальных направления для интерфейса «БиоТрек».</p>
+      </header>
+
+      <section class="widget variant-classic">
+        <div class="widget-top">
+          <div>
+            <h2>Здоровая</h2>
+            <p class="muted">Активных диагнозов нет</p>
+          </div>
+          <p class="review-date">Последний осмотр: <strong>05.11.2025 14:20</strong></p>
+        </div>
+
+        <div class="metrics">
+          <article>
+            <p class="label">Состояния вымени</p>
+            <p class="value">В норме</p>
+            <p class="score green">5 баллов</p>
+          </article>
+          <article>
+            <p class="label">Сомат. клетки (SCC)</p>
+            <p class="value">105 тыс./мл</p>
+            <p class="score green">В норме</p>
+          </article>
+          <article>
+            <p class="label">Каренция (осталось)</p>
+            <p class="value danger">Мясо: 7 дн.</p>
+            <p class="value danger">Молоко: 14 дн.</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary">Добавить вет-событие</button>
+          <button class="btn btn-secondary">Назначить протокол</button>
+        </div>
+      </section>
+
+      <section class="widget variant-gradient">
+        <div class="widget-top">
+          <div>
+            <h2>Здоровая</h2>
+            <p class="muted">Мониторинг стабильный</p>
+          </div>
+          <span class="chip">Риск мастита: низкий</span>
+        </div>
+
+        <div class="kpi-grid">
+          <article>
+            <p class="label">SCC</p>
+            <p class="value">105 тыс./мл</p>
+          </article>
+          <article>
+            <p class="label">Температура</p>
+            <p class="value">38.4 °C</p>
+          </article>
+          <article>
+            <p class="label">Каренция</p>
+            <p class="value danger">7 / 14 дней</p>
+          </article>
+          <article>
+            <p class="label">Оценка</p>
+            <p class="value">5.0</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary">Открыть карточку животного</button>
+          <button class="btn btn-ghost">История осмотров</button>
+        </div>
+      </section>
+
+      <section class="widget variant-compact">
+        <div class="compact-line">
+          <h2>Здоровая</h2>
+          <p class="muted">Осмотр 05.11.2025</p>
+        </div>
+        <div class="compact-badges">
+          <span class="badge ok">SCC 105 тыс./мл</span>
+          <span class="badge ok">Вымя: норма</span>
+          <span class="badge warn">Мясо: 7 дн.</span>
+          <span class="badge warn">Молоко: 14 дн.</span>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary">+ Вет-событие</button>
+          <button class="btn btn-secondary">Протокол</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
